@@ -4,7 +4,7 @@
 
 **Effective Date**: October 17, 2025  
 **Disclosing Party**: Demond J. Balentine / PeoplePay Inc.  
-**Receiving Party**: Arlo Washington / [Buyer Entity Name]  
+**Receiving Party**: [Buyer Entity Name]  
 
 ---
 

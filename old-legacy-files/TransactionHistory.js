@@ -8,7 +8,7 @@ import formatCurrency from './formatCurrency'; // Utility for consistent currenc
 
 // Sample transaction data (can be replaced with backend API or local storage)
 const sampleTransactions = [
-  { id: '1', type: 'Send', amount: 25.0, recipient: 'Arlo Washington', date: '2025-09-28' },
+  { id: '1', type: 'Send', amount: 25.0, recipient: 'John Doe', date: '2025-09-28' },
   { id: '2', type: 'Receive', amount: 40.0, sender: 'Tasha Green', date: '2025-09-27' },
   { id: '3', type: 'Send', amount: 15.5, recipient: 'Marcus Lee', date: '2025-09-26' },
 ];

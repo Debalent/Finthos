@@ -1,6 +1,6 @@
 # 📱 PeoplePay Mobile App Store Deployment Guide
 
-## For: Arlo Washington
+## For: Prospective Buyers
 
 ## Prepared by: Demond J. Balentine
 
@@ -527,7 +527,7 @@ const setupIAP = async () => {
 
 ---
 
-## 🎯 Next Steps for Arlo Washington
+## 🎯 Next Steps for Interested Buyers
 
 ### Immediate Actions Required
 

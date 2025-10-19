@@ -7,7 +7,7 @@ import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native
 
 // Sample contact data (can be replaced with backend or local storage)
 const initialFavorites = [
-  { id: '1', name: 'Arlo Washington' },
+  { id: '1', name: 'John Doe' },
   { id: '2', name: 'Tasha Green' },
   { id: '3', name: 'Marcus Lee' },
 ];

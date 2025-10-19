@@ -1,4 +1,4 @@
-# 📧 Professional Package for Arlo Washington
+# 📧 Professional Package for Prospective Buyers
 
 ## From: Demond J. Balentine, CEO & Founder, PeoplePay
 ## Date: October 17, 2025
@@ -141,4 +141,4 @@ demond.balentine@atlasstudents.com
 
 ---
 
-*© 2025 PeoplePay Inc. - Confidential Business Package for Arlo Washington*
+*© 2025 PeoplePay Inc. - Confidential Business Package for Prospective Buyers*

@@ -1,7 +1,7 @@
 // client/services/transactionService.js
 
 const mockTransactions = [
-  { id: 1, type: 'Sent', to: 'Arlo Washington', amount: 50, date: '2025-09-27' },
+  { id: 1, type: 'Sent', to: 'John Doe', amount: 50, date: '2025-09-27' },
   { id: 2, type: 'Received', from: 'Community Fund', amount: 100, date: '2025-09-26' },
 ];
 

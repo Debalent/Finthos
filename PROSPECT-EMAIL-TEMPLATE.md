@@ -1,10 +1,10 @@
-# 📧 LEGALLY PROTECTED EMAIL TEMPLATE FOR ARLO WASHINGTON
+# 📧 LEGALLY PROTECTED EMAIL TEMPLATE FOR PROSPECTS
 
 ## Subject: PeoplePay Enterprise Platform - Confidential Business Opportunity
 
 ---
 
-Dear Arlo Washington,
+Dear [Prospect Name],
 
 I hope this message finds you well. I'm writing to share a unique enterprise fintech acquisition opportunity that may align with your investment portfolio.
 
