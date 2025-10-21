@@ -1,173 +1,175 @@
 version: '3.8'
 
 services:
-  # API Gateway
-  api-gateway:
-    build:
-      context: .
-      dockerfile: infra/api-gateway/Dockerfile
-    ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=development
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/peoplepay
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - ./infra/api-gateway:/app
-      - /app/node_modules
-
-  # Auth Service
-  auth-service:
-    build:
-      context: .
-      dockerfile: services/auth/Dockerfile
-    ports:
-      - "3001:3001"
-    environment:
-      - NODE_ENV=development
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/peoplepay
-      - JWT_SECRET=dev-jwt-secret-key
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - ./services/auth:/app
-      - /app/node_modules
-
-  # Payments Service
-  payments-service:
-    build:
-      context: .
-      dockerfile: services/payments/Dockerfile
-    ports:
-      - "3002:3002"
-    environment:
-      - NODE_ENV=development
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/peoplepay
-      - STRIPE_SECRET_KEY=sk_test_your_stripe_key
-      - PLAID_CLIENT_ID=your_plaid_client_id
-      - PLAID_SECRET=your_plaid_secret
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - ./services/payments:/app
-      - /app/node_modules
-
-  # Web App (Next.js)
-  web-app:
-    build:
-      context: .
-      dockerfile: apps/web/Dockerfile
-    ports:
-      - "3003:3000"
-    environment:
-      - NODE_ENV=development
-      - NEXT_PUBLIC_API_URL=http://localhost:3000
-      - NEXT_PUBLIC_AUTH_URL=http://localhost:3001
-      - NEXT_PUBLIC_PAYMENTS_URL=http://localhost:3002
-    volumes:
-      - ./apps/web:/app
-      - /app/node_modules
-      - /app/.next
-
-  # Admin Dashboard
-  admin-dashboard:
-    build:
-      context: .
-      dockerfile: apps/admin-dashboard/Dockerfile
-    ports:
-      - "3004:3000"
-    environment:
-      - NODE_ENV=development
-      - NEXT_PUBLIC_API_URL=http://localhost:3000
-    volumes:
-      - ./apps/admin-dashboard:/app
-      - /app/node_modules
-      - /app/.next
-
   # PostgreSQL Database
   postgres:
-    image: postgres:15-alpine
+    image: postgres:15
+    environment:
+      POSTGRES_DB: peoplepay
+      POSTGRES_USER: peoplepay
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-dev-password}
     ports:
       - "5432:5432"
-    environment:
-      - POSTGRES_DB=peoplepay
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U peoplepay -d peoplepay"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
-  # Redis Cache
+  # Redis for caching and queues
   redis:
     image: redis:7-alpine
     ports:
       - "6379:6379"
     volumes:
       - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
-  # MongoDB (for blockchain data)
-  mongodb:
-    image: mongo:6
-    ports:
-      - "27017:27017"
+  # Authentication Service
+  auth-service:
+    build:
+      context: ./services/auth
+      dockerfile: Dockerfile
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=password
-      - MONGO_INITDB_DATABASE=peoplepay_blockchain
-    volumes:
-      - mongodb_data:/data/db
-
-  # IPFS Node (for decentralized storage)
-  ipfs:
-    image: ipfs/go-ipfs:latest
+      - NODE_ENV=production
+      - PORT=3001
+      - JWT_SECRET=${JWT_SECRET:-dev-jwt-secret}
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=peoplepay
+      - DB_USER=peoplepay
+      - DB_PASSWORD=${DB_PASSWORD:-dev-password}
+      - REDIS_URL=redis://redis:6379
+      - RP_ID=${RP_ID:-localhost}
+      - EXPECTED_ORIGIN=${EXPECTED_ORIGIN:-http://localhost:3000}
     ports:
-      - "4001:4001"
-      - "5001:5001"
-      - "8080:8080"
-    volumes:
-      - ipfs_data:/data/ipfs
+      - "3001:3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
 
-  # Prometheus (monitoring)
+  # Payments Service
+  payments-service:
+    build:
+      context: ./services/payments
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=peoplepay
+      - DB_USER=peoplepay
+      - DB_PASSWORD=${DB_PASSWORD:-dev-password}
+      - REDIS_URL=redis://redis:6379
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - PLAID_CLIENT_ID=${PLAID_CLIENT_ID}
+      - PLAID_SECRET=${PLAID_SECRET}
+      - ETHEREUM_RPC_URL=${ETHEREUM_RPC_URL}
+      - BITCOIN_RPC_URL=${BITCOIN_RPC_URL}
+    ports:
+      - "3002:3002"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Ledger Service
+  ledger-service:
+    build:
+      context: ./services/ledger
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - PORT=3003
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=peoplepay
+      - DB_USER=peoplepay
+      - DB_PASSWORD=${DB_PASSWORD:-dev-password}
+      - REDIS_URL=redis://redis:6379
+      - ETHEREUM_RPC_URL=${ETHEREUM_RPC_URL}
+      - BITCOIN_RPC_URL=${BITCOIN_RPC_URL}
+    ports:
+      - "3003:3003"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # API Gateway
+  api-gateway:
+    build:
+      context: ./infra/api-gateway
+      dockerfile: Dockerfile
+    environment:
+      - AUTH_SERVICE_URL=http://auth-service:3001
+      - PAYMENTS_SERVICE_URL=http://payments-service:3002
+      - LEDGER_SERVICE_URL=http://ledger-service:3003
+    ports:
+      - "3000:3000"
+    depends_on:
+      - auth-service
+      - payments-service
+      - ledger-service
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Monitoring (Prometheus + Grafana)
   prometheus:
     image: prom/prometheus:latest
     ports:
       - "9090:9090"
     volumes:
       - ./infra/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus_data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--storage.tsdb.path=/prometheus'
-      - '--web.console.libraries=/etc/prometheus/console_libraries'
-      - '--web.console.templates=/etc/prometheus/consoles'
+    restart: unless-stopped
 
-  # Grafana (monitoring dashboard)
   grafana:
     image: grafana/grafana:latest
     ports:
-      - "3005:3000"
+      - "3004:3000"
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
     volumes:
       - grafana_data:/var/lib/grafana
-      - ./infra/monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
-      - ./infra/monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    restart: unless-stopped
 
 volumes:
   postgres_data:
   redis_data:
-  mongodb_data:
-  ipfs_data:
-  prometheus_data:
   grafana_data:
-
-networks:
-  default:
-    name: peoplepay-network

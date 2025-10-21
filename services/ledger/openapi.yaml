@@ -1,0 +1,370 @@
+openapi: 3.0.3
+info:
+  title: PeoplePay Ledger Service
+  description: Immutable ledger service with blockchain integration and balance calculation
+  version: 1.0.0
+  contact:
+    name: PeoplePay Team
+servers:
+  - url: http://localhost:3003
+    description: Development server
+  - url: https://ledger.peoplepay.com
+    description: Production server
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  service:
+                    type: string
+                    example: ledger
+                  timestamp:
+                    type: string
+                    format: date-time
+
+  /ledger/transactions:
+    post:
+      summary: Record a transaction in the ledger
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - id
+                - amount
+                - currency
+                - type
+                - description
+              properties:
+                id:
+                  type: string
+                  description: Transaction ID
+                fromUserId:
+                  type: string
+                  description: Sender user ID
+                toUserId:
+                  type: string
+                  description: Receiver user ID
+                amount:
+                  type: string
+                  description: Transaction amount as decimal string
+                  example: "100.50"
+                currency:
+                  type: string
+                  enum: [USD, EUR, BTC, ETH, USDC, EURC]
+                type:
+                  type: string
+                  enum: [send, receive, transfer, deposit, withdrawal]
+                description:
+                  type: string
+                metadata:
+                  type: object
+                  description: Additional transaction metadata
+      responses:
+        '200':
+          description: Transaction recorded successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  entries:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/LedgerEntry'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /ledger/balances/{userId}/{currency}:
+    get:
+      summary: Get account balance
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: currency
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [USD, EUR, BTC, ETH, USDC, EURC]
+      responses:
+        '200':
+          description: Account balance
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  balance:
+                    $ref: '#/components/schemas/AccountBalance'
+        '404':
+          description: Balance not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /ledger/balances/{userId}/{currency}/history:
+    get:
+      summary: Get balance history
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: currency
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [USD, EUR, BTC, ETH, USDC, EURC]
+        - name: startDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: endDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: Balance history
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  history:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/LedgerEntry'
+
+  /ledger/transactions/{userId}:
+    get:
+      summary: Get transaction history
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: currency
+          in: query
+          schema:
+            type: string
+            enum: [USD, EUR, BTC, ETH, USDC, EURC]
+        - name: startDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: endDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: type
+          in: query
+          schema:
+            type: string
+            enum: [send, receive, transfer, deposit, withdrawal]
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 50
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            default: 0
+      responses:
+        '200':
+          description: Transaction history
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactions:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/LedgerEntry'
+                  total:
+                    type: integer
+
+  /ledger/reconcile:
+    post:
+      summary: Run balance reconciliation
+      responses:
+        '200':
+          description: Reconciliation completed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  report:
+                    $ref: '#/components/schemas/ReconciliationReport'
+        '500':
+          description: Reconciliation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /ledger/reports/financial/{userId}:
+    get:
+      summary: Generate financial report
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: period
+          in: query
+          schema:
+            type: string
+            enum: [daily, weekly, monthly]
+            default: monthly
+      responses:
+        '200':
+          description: Financial report
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  report:
+                    type: object
+                    description: Financial report data
+
+components:
+  schemas:
+    LedgerEntry:
+      type: object
+      properties:
+        id:
+          type: string
+        transactionId:
+          type: string
+        userId:
+          type: string
+        type:
+          type: string
+          enum: [debit, credit]
+        amount:
+          type: string
+          description: Amount as decimal string
+        currency:
+          type: string
+        balanceBefore:
+          type: string
+          description: Balance before as decimal string
+        balanceAfter:
+          type: string
+          description: Balance after as decimal string
+        description:
+          type: string
+        metadata:
+          type: object
+        timestamp:
+          type: string
+          format: date-time
+        blockHash:
+          type: string
+        blockNumber:
+          type: integer
+        transactionHash:
+          type: string
+        immutable:
+          type: boolean
+
+    AccountBalance:
+      type: object
+      properties:
+        userId:
+          type: string
+        currency:
+          type: string
+        available:
+          type: string
+          description: Available balance as decimal string
+        pending:
+          type: string
+          description: Pending balance as decimal string
+        frozen:
+          type: string
+          description: Frozen balance as decimal string
+        total:
+          type: string
+          description: Total balance as decimal string
+        lastUpdated:
+          type: string
+          format: date-time
+
+    ReconciliationReport:
+      type: object
+      properties:
+        id:
+          type: string
+        periodStart:
+          type: string
+          format: date-time
+        periodEnd:
+          type: string
+          format: date-time
+        totalTransactions:
+          type: integer
+        totalVolume:
+          type: string
+          description: Total volume as decimal string
+        discrepancies:
+          type: array
+          items:
+            type: object
+            properties:
+              transactionId:
+                type: string
+              expectedAmount:
+                type: string
+              actualAmount:
+                type: string
+              difference:
+                type: string
+        status:
+          type: string
+          enum: [pending, completed, failed]
+        generatedAt:
+          type: string
+          format: date-time
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string

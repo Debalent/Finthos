@@ -1,0 +1,475 @@
+openapi: 3.0.3
+info:
+  title: PeoplePay Payments Service
+  description: Core payment processing, transfers, and transaction management
+  version: 1.0.0
+  contact:
+    name: PeoplePay Team
+servers:
+  - url: http://localhost:3002
+    description: Development server
+  - url: https://payments.peoplepay.com
+    description: Production server
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  service:
+                    type: string
+                    example: payments
+                  timestamp:
+                    type: string
+                    format: date-time
+
+  /payments/send:
+    post:
+      summary: Send money to another user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - fromUserId
+                - amount
+                - currency
+              properties:
+                fromUserId:
+                  type: string
+                  description: Sender's user ID
+                toUserId:
+                  type: string
+                  description: Receiver's user ID
+                toEmail:
+                  type: string
+                  description: Receiver's email
+                toPhone:
+                  type: string
+                  description: Receiver's phone number
+                amount:
+                  oneOf:
+                    - type: string
+                      description: Amount as decimal string
+                    - type: number
+                      description: Amount as number
+                  example: "100.50"
+                currency:
+                  type: string
+                  enum: [USD, EUR, BTC, ETH, USDC, EURC]
+                description:
+                  type: string
+                paymentMethodId:
+                  type: string
+                priority:
+                  type: string
+                  enum: [standard, express, instant]
+                  default: standard
+      responses:
+        '200':
+          description: Money sent successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transaction:
+                    $ref: '#/components/schemas/Transaction'
+        '400':
+          description: Invalid input or insufficient funds
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /payments/receive/{transactionId}:
+    post:
+      summary: Accept received money
+      parameters:
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - userId
+              properties:
+                userId:
+                  type: string
+                  description: Receiver's user ID
+      responses:
+        '200':
+          description: Money received successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transaction:
+                    $ref: '#/components/schemas/Transaction'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /payments/request:
+    post:
+      summary: Request money from another user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - fromUserId
+                - toUserId
+                - amount
+              properties:
+                fromUserId:
+                  type: string
+                  description: Requester's user ID
+                toUserId:
+                  type: string
+                  description: Target user's ID
+                amount:
+                  type: number
+                  description: Requested amount
+                description:
+                  type: string
+      responses:
+        '200':
+          description: Money requested successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transaction:
+                    $ref: '#/components/schemas/Transaction'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /payments/methods:
+    post:
+      summary: Add a payment method
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - userId
+                - type
+                - provider
+                - displayName
+                - last4
+              properties:
+                userId:
+                  type: string
+                type:
+                  type: string
+                  enum: [bank_account, card, crypto_wallet]
+                provider:
+                  type: string
+                  enum: [stripe, plaid, metamask, internal]
+                displayName:
+                  type: string
+                last4:
+                  type: string
+                isDefault:
+                  type: boolean
+                  default: false
+                isVerified:
+                  type: boolean
+                  default: false
+                metadata:
+                  type: object
+      responses:
+        '200':
+          description: Payment method added
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  method:
+                    $ref: '#/components/schemas/PaymentMethod'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /payments/methods/{userId}:
+    get:
+      summary: Get user's payment methods
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Payment methods retrieved
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  methods:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/PaymentMethod'
+
+  /payments/transactions/{userId}:
+    get:
+      summary: Get user's transactions
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 50
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            default: 0
+      responses:
+        '200':
+          description: Transactions retrieved
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactions:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Transaction'
+
+  /payments/transactions/detail/{transactionId}:
+    get:
+      summary: Get transaction details
+      parameters:
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Transaction details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transaction:
+                    $ref: '#/components/schemas/Transaction'
+        '404':
+          description: Transaction not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /payments/refund/{transactionId}:
+    post:
+      summary: Process a refund
+      parameters:
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reason:
+                  type: string
+                  description: Refund reason
+      responses:
+        '200':
+          description: Refund processed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  refund:
+                    $ref: '#/components/schemas/Transaction'
+        '400':
+          description: Refund failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /payments/transactions/{transactionId}/status:
+    get:
+      summary: Get real-time transaction status
+      parameters:
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Transaction status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    $ref: '#/components/schemas/RealTimeTransaction'
+        '404':
+          description: Transaction not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    PaymentMethod:
+      type: object
+      properties:
+        id:
+          type: string
+        userId:
+          type: string
+        type:
+          type: string
+          enum: [bank_account, card, crypto_wallet]
+        provider:
+          type: string
+          enum: [stripe, plaid, metamask, internal]
+        displayName:
+          type: string
+        last4:
+          type: string
+        isDefault:
+          type: boolean
+        isVerified:
+          type: boolean
+        metadata:
+          type: object
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    Transaction:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum: [send, receive, transfer, deposit, withdrawal]
+        status:
+          type: string
+          enum: [pending, processing, completed, failed, cancelled]
+        amount:
+          type: string
+          description: Amount as decimal string
+        currency:
+          type: string
+          enum: [USD, EUR, BTC, ETH, USDC, EURC]
+        fromUserId:
+          type: string
+        toUserId:
+          type: string
+        fromMethod:
+          type: string
+        toMethod:
+          type: string
+        fee:
+          type: string
+          description: Fee as decimal string
+        exchangeRate:
+          type: string
+          description: Exchange rate as decimal string
+        description:
+          type: string
+        metadata:
+          type: object
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        completedAt:
+          type: string
+          format: date-time
+        failedAt:
+          type: string
+          format: date-time
+        failureReason:
+          type: string
+
+    RealTimeTransaction:
+      type: object
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+          enum: [pending, confirmed, finalized]
+        confirmations:
+          type: integer
+        estimatedCompletionTime:
+          type: string
+          format: date-time
+        currentBlock:
+          type: integer
+        requiredConfirmations:
+          type: integer
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
