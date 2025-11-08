@@ -1,14 +1,14 @@
 openapi: 3.0.3
 info:
-  title: PeoplePay Ledger Service
+  title: Finthos Ledger Service
   description: Immutable ledger service with blockchain integration and balance calculation
   version: 1.0.0
   contact:
-    name: PeoplePay Team
+    name: Finthos Team
 servers:
   - url: http://localhost:3003
     description: Development server
-  - url: https://ledger.peoplepay.com
+  - url: https://ledger.finthos.com
     description: Production server
 
 paths:

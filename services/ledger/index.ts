@@ -1,4 +1,4 @@
-// PeoplePay Ledger Service
+// Finthos Ledger Service
 // Immutable transaction logging, blockchain integration, and balance calculation
 
 import { randomUUID } from 'crypto'

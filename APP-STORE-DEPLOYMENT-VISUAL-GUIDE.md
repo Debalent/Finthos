@@ -1,4 +1,4 @@
-# 📱 PeoplePay Mobile App Store Deployment & Features Guide
+# 📱 Finthos Mobile App Store Deployment & Features Guide
 
 ## Complete Visual Guide for iOS App Store & Google Play Store Submission
 
@@ -34,7 +34,7 @@
 ```
 
 **Required Information:**
-- Business Legal Name: PeoplePay Inc.
+- Business Legal Name: Finthos Inc.
 - D-U-N-S Number: [To be obtained]
 - Bank Account Information for revenue
 - Tax forms (W-9 for US entities)
@@ -46,8 +46,8 @@
 [SCREENSHOT PLACEHOLDER]
 - App Store Connect interface showing:
   - "Create New App" dialog
-  - App Name: "PeoplePay - Digital Payments"
-  - Bundle ID: com.peoplepay.mobile
+  - App Name: "Finthos - Digital Payments"
+  - Bundle ID: com.Finthos.mobile
   - Platform: iOS
   - Primary Language: English (U.S.)
 ```
@@ -58,7 +58,7 @@
 ```
 [SCREENSHOT PLACEHOLDER]
 - App information form showing:
-  - Name: PeoplePay
+  - Name: Finthos
   - Subtitle: Secure Digital Payments & Crypto Wallet
   - Category: Finance
   - Content Rating: 17+ (Financial services)
@@ -67,9 +67,9 @@
 
 **App Store Description:**
 ```
-PeoplePay - Enterprise-Grade Digital Payment Platform
+Finthos - Enterprise-Grade Digital Payment Platform
 
-Transform your financial transactions with PeoplePay's secure, blockchain-enabled payment platform. Built for businesses and individuals who demand enterprise-level security with consumer-friendly design.
+Transform your financial transactions with Finthos's secure, blockchain-enabled payment platform. Built for businesses and individuals who demand enterprise-level security with consumer-friendly design.
 
 KEY FEATURES:
 • Instant peer-to-peer payments
@@ -93,7 +93,7 @@ FOR BUSINESSES:
 • Multi-user account management
 • Regulatory compliance tools
 
-Download PeoplePay today and join thousands of users who trust us with their financial transactions.
+Download Finthos today and join thousands of users who trust us with their financial transactions.
 ```
 
 ### Step 4: App Screenshots (iPhone 15 Pro Max - 6.7")
@@ -166,7 +166,7 @@ Download PeoplePay today and join thousands of users who trust us with their fin
 ```
 
 **Demo Account for Apple Review:**
-- Username: apple.reviewer@peoplepay.demo
+- Username: apple.reviewer@Finthos.demo
 - Password: AppleReview2025!
 - Note: Full payment functionality available in demo mode
 
@@ -192,7 +192,7 @@ Download PeoplePay today and join thousands of users who trust us with their fin
 ```
 [SCREENSHOT PLACEHOLDER]
 - Create app interface showing:
-  - App name: PeoplePay
+  - App name: Finthos
   - Default language: English (United States)
   - App or game: App
   - Free or paid: Free with in-app purchases
@@ -213,9 +213,9 @@ Download PeoplePay today and join thousands of users who trust us with their fin
 
 **Google Play Description:**
 ```
-PeoplePay: The Future of Digital Payments
+Finthos: The Future of Digital Payments
 
-Experience the next generation of financial technology with PeoplePay's comprehensive digital payment platform. Designed for security, built for scale.
+Experience the next generation of financial technology with Finthos's comprehensive digital payment platform. Designed for security, built for scale.
 
 ✅ INSTANT PAYMENTS
 Send and receive money instantly with our real-time payment processing engine.
@@ -233,7 +233,7 @@ Multi-currency support with competitive exchange rates.
 Advanced analytics, API integration, and white-label solutions.
 
 TRUSTED BY BUSINESSES WORLDWIDE
-Join thousands of businesses who rely on PeoplePay for their payment infrastructure.
+Join thousands of businesses who rely on Finthos for their payment infrastructure.
 
 Download now and transform how you handle money.
 ```
@@ -244,7 +244,7 @@ Download now and transform how you handle money.
 ```
 [SCREENSHOT PLACEHOLDER]
 - Onboarding screen showing:
-  - PeoplePay logo and branding
+  - Finthos logo and branding
   - "Welcome to the future of payments"
   - Sign up and login options
   - Security badges and certifications
@@ -502,7 +502,7 @@ Download now and transform how you handle money.
 ```
 Video Storyboard:
 
-Scene 1 (0-5s): App launch with PeoplePay logo
+Scene 1 (0-5s): App launch with Finthos logo
 Scene 2 (5-10s): Dashboard overview with transaction data
 Scene 3 (10-15s): Send money flow demonstration
 Scene 4 (15-20s): Security features highlight
@@ -510,10 +510,10 @@ Scene 5 (20-25s): Business analytics preview
 Scene 6 (25-30s): Call-to-action with download prompt
 
 Voiceover Script:
-"Transform your financial transactions with PeoplePay. 
+"Transform your financial transactions with Finthos. 
 Send money instantly, manage crypto, track business analytics, 
 all with enterprise-grade security. 
-Download PeoplePay today - the future of digital payments."
+Download Finthos today - the future of digital payments."
 ```
 
 ---
@@ -596,4 +596,4 @@ Download PeoplePay today - the future of digital payments."
 
 ---
 
-*© 2025 PeoplePay Inc. - App Store Deployment Guide - Confidential Business Documentation*
+*© 2025 Finthos Inc. - App Store Deployment Guide - Confidential Business Documentation*

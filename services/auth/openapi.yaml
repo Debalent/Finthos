@@ -1,14 +1,14 @@
 openapi: 3.0.3
 info:
-  title: PeoplePay Authentication Service
+  title: Finthos Authentication Service
   description: Authentication service with OAuth2, biometric login, and 2FA
   version: 1.0.0
   contact:
-    name: PeoplePay Team
+    name: Finthos Team
 servers:
   - url: http://localhost:3001
     description: Development server
-  - url: https://auth.peoplepay.com
+  - url: https://auth.finthos.com
     description: Production server
 
 paths:

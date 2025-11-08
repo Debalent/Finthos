@@ -2,7 +2,7 @@
 
 ## Current State
 
-This PeoplePay repository represents a comprehensive fintech platform demonstration with enterprise-grade architecture and documentation. The codebase includes:
+This Finthos repository represents a comprehensive fintech platform demonstration with enterprise-grade architecture and documentation. The codebase includes:
 
 - ✅ **Complete Documentation** - Business case, technical architecture, deployment guides
 - ✅ **Professional Repository Structure** - Monorepo with services, packages, and apps

@@ -1,8 +1,8 @@
-# PeoplePay Demo - For Potential Buyers
+# Finthos Demo - For Potential Buyers
 
 ## Overview
 
-This is a demonstration of the PeoplePay enterprise fintech platform - a comprehensive solution for secure peer-to-peer payments with blockchain integration.
+This is a demonstration of the Finthos enterprise fintech platform - a comprehensive solution for secure peer-to-peer payments with blockchain integration.
 
 ## Quick Start Guide
 
@@ -72,8 +72,8 @@ This is a demonstration of the PeoplePay enterprise fintech platform - a compreh
 
 **LinkedIn**: /in/demond-balentine
 
-**GitHub**: <https://github.com/Debalent/PeoplePay>
+**GitHub**: <https://github.com/Debalent/Finthos>
 
 ---
 
-*This demo represents the PeoplePay platform architecture and capabilities. Actual implementation may include additional features and customizations based on specific requirements.*
+*This demo represents the Finthos platform architecture and capabilities. Actual implementation may include additional features and customizations based on specific requirements.*

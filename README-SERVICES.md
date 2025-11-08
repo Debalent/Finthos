@@ -1,6 +1,6 @@
-# PeoplePay Backend Services
+# Finthos Backend Services
 
-Production-ready microservices for PeoplePay implementing enterprise-grade authentication, payments, and ledger functionality.
+Production-ready microservices for Finthos implementing enterprise-grade authentication, payments, and ledger functionality.
 
 ## Architecture Overview
 
@@ -78,7 +78,7 @@ Production-ready microservices for PeoplePay implementing enterprise-grade authe
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd peoplepay-backend
+cd finthos-backend
 
 # Copy environment file
 cp .env.example .env
@@ -230,8 +230,8 @@ Each service exposes a `/health` endpoint returning:
 # Database
 DB_HOST=postgres
 DB_PORT=5432
-DB_NAME=peoplepay
-DB_USER=peoplepay
+DB_NAME=finthos
+DB_USER=finthos
 DB_PASSWORD=secure-password
 
 # Redis
@@ -280,4 +280,4 @@ ETHEREUM_RPC_URL=https://mainnet.infura.io/v3/YOUR_PROJECT_ID
 
 ## License
 
-Proprietary - PeoplePay Inc.
+Proprietary - Finthos Inc.

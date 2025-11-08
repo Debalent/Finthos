@@ -12,30 +12,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PeoplePay - Modern Payment Solutions",
+  title: "Finthos - Modern Payment Solutions",
   description: "Secure, fast, and reliable payment processing for businesses and individuals",
   keywords: ["payments", "fintech", "money transfer", "digital wallet"],
-  authors: [{ name: "PeoplePay Team" }],
+  authors: [{ name: "Finthos Team" }],
   viewport: "width=device-width, initial-scale=1",
   manifest: "/manifest.json",
   themeColor: "#000000",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "PeoplePay",
+    title: "Finthos",
   },
   formatDetection: {
     telephone: false,
   },
   openGraph: {
     type: "website",
-    siteName: "PeoplePay",
-    title: "PeoplePay - Modern Payment Solutions",
+    siteName: "Finthos",
+    title: "Finthos - Modern Payment Solutions",
     description: "Secure, fast, and reliable payment processing for businesses and individuals",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PeoplePay - Modern Payment Solutions",
+    title: "Finthos - Modern Payment Solutions",
     description: "Secure, fast, and reliable payment processing for businesses and individuals",
   },
 };

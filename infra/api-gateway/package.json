@@ -1,5 +1,5 @@
 {
-  "name": "@peoplepay/api-gateway",
+  "name": "@finthos/api-gateway",
   "version": "1.0.0",
   "description": "API Gateway for PeoplePay microservices",
   "main": "index.js",

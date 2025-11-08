@@ -1,10 +1,10 @@
-# PeoplePay Enterprise Platform
+# Finthos Enterprise Platform
 
-![PeoplePay Logo](./assets/PeoplePayLogo.jpg)
+![Finthos Logo](./assets/FinthosLogo.jpg)
 
 ## 🎯 Investment Opportunity - Complete Fintech Platform Acquisition
 
-**PeoplePay** is a production-ready, enterprise-grade fintech platform available for immediate acquisition. This turnkey solution represents 2+ years of development and $800K+ investment, now available at a significant discount to development cost.
+**Finthos** is a production-ready, enterprise-grade fintech platform available for immediate acquisition. This turnkey solution represents 2+ years of development and $800K+ investment, now available at a significant discount to development cost.
 
 ### 🚨 Investment Highlights
 
@@ -44,7 +44,7 @@ node demo-server.js
 
 ### Production-Ready Monorepo Structure
 
-PeoplePay is structured as a monorepo with the following components:
+Finthos is structured as a monorepo with the following components:
 
 ### Apps
 
@@ -207,4 +207,4 @@ node demo-server.js
 
 ## License
 
-Copyright © 2025 PeoplePay. All rights reserved.
+Copyright © 2025 Finthos. All rights reserved.

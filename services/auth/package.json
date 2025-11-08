@@ -1,5 +1,5 @@
 {
-  "name": "@peoplepay/auth-service",
+  "name": "@finthos/auth-service",
   "version": "1.0.0",
   "description": "Authentication service with OAuth2, biometric login, and 2FA",
   "main": "index.ts",
@@ -44,6 +44,6 @@
     "webauthn",
     "jwt"
   ],
-  "author": "PeoplePay Team",
+  "author": "Finthos Team",
   "license": "PROPRIETARY"
 }
