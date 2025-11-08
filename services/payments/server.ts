@@ -120,7 +120,13 @@ app.post('/payments/methods', async (req, res) => {
     })
 
     const data = schema.parse(req.body)
-    const method = await paymentsService.addPaymentMethod(data.userId, data)
+    const method = await paymentsService.addPaymentMethod(data.userId, { 
+      ...data, 
+      metadata: data.metadata || {}, 
+      isDefault: data.isDefault || false,
+      isVerified: data.isVerified || false,
+      updatedAt: new Date() 
+    })
 
     res.json({ method })
   } catch (error) {
@@ -226,14 +232,14 @@ app.get('/payments/transactions/:transactionId/status', async (req, res) => {
 // Graceful shutdown
 process.on('SIGTERM', () => {
   console.log('SIGTERM received, shutting down gracefully')
-  paymentsService.transactionQueue.close().then(() => {
+  paymentsService.shutdown().then(() => {
     process.exit(0)
   })
 })
 
 process.on('SIGINT', () => {
   console.log('SIGINT received, shutting down gracefully')
-  paymentsService.transactionQueue.close().then(() => {
+  paymentsService.shutdown().then(() => {
     process.exit(0)
   })
 })
