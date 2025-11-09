@@ -1,7 +1,7 @@
 {
-  "name": "@peoplepay/ui",
+  "name": "@Finthos/ui",
   "version": "1.0.0",
-  "description": "Shared UI components for PeoplePay applications",
+  "description": "Shared UI components for Finthos applications",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -55,6 +55,6 @@
     "typescript",
     "design-system"
   ],
-  "author": "PeoplePay Team",
+  "author": "Finthos Team",
   "license": "PROPRIETARY"
 }

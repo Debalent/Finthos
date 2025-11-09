@@ -1,5 +1,5 @@
 {
-  "name": "@peoplepay/payments-service",
+  "name": "@finthos/payments-service",
   "version": "1.0.0",
   "description": "Core payment processing, transfers, and transaction management",
   "main": "index.ts",
@@ -42,6 +42,6 @@
     "transactions",
     "transfers"
   ],
-  "author": "PeoplePay Team",
+  "author": "Finthos Team",
   "license": "PROPRIETARY"
 }

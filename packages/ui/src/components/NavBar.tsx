@@ -53,7 +53,7 @@ export const NavBar: React.FC<NavBarProps> = ({
   userRole = 'user',
   onLogout,
   onNotifications,
-  logoSrc = '/assets/PeoplePayLogo.jpg',
+  logoSrc = '/assets/FinthosLogo.jpg',
   className = ''
 }) => {
   const [isExploreOpen, setIsExploreOpen] = useState(false)
@@ -99,8 +99,8 @@ export const NavBar: React.FC<NavBarProps> = ({
       onLogout()
     } else {
       // Default logout behavior
-      localStorage.removeItem('peoplepay_token')
-      localStorage.removeItem('peoplepay_role')
+      localStorage.removeItem('Finthos_token')
+      localStorage.removeItem('Finthos_role')
       router.push('/login')
     }
   }
@@ -123,12 +123,12 @@ export const NavBar: React.FC<NavBarProps> = ({
             <Link href="/dashboard" className="flex items-center gap-3">
               <Image 
                 src={logoSrc} 
-                alt="PeoplePay" 
+                alt="Finthos" 
                 width={32} 
                 height={32}
                 className="rounded-md"
               />
-              <span className="font-semibold text-lg text-gray-900">PeoplePay</span>
+              <span className="font-semibold text-lg text-gray-900">Finthos</span>
             </Link>
             
             <nav className="ml-8" aria-label="Primary navigation">

@@ -227,8 +227,8 @@ export class AuthService {
       }
 
       const secret = speakeasy.generateSecret({
-        name: `PeoplePay (${user.email})`,
-        issuer: 'PeoplePay'
+        name: `Finthos (${user.email})`,
+        issuer: 'Finthos'
       })
 
       user.twoFactorSecret = secret.base32
@@ -279,7 +279,7 @@ export class AuthService {
       }
 
       const options = generateRegistrationOptions({
-        rpName: 'PeoplePay',
+        rpName: 'Finthos',
         rpID: process.env.RP_ID || 'localhost',
         userID: userId,
         userName: user.email,
@@ -311,7 +311,7 @@ export class AuthService {
 
       // TODO: Get stored challenge from Redis
 
-      const verification = verifyRegistrationResponse({
+      const verification = await verifyRegistrationResponse({
         response,
         expectedChallenge: 'stored-challenge', // TODO: Get from Redis
         expectedOrigin: process.env.EXPECTED_ORIGIN || 'http://localhost:3000',
@@ -320,8 +320,8 @@ export class AuthService {
 
       if (verification.verified) {
         user.biometricEnabled = true
-        user.biometricCredentialId = verification.registrationInfo?.credentialID
-        user.biometricPublicKey = verification.registrationInfo?.credentialPublicKey
+        user.biometricCredentialId = verification.registrationInfo?.credentialID?.toString() || ''
+        user.biometricPublicKey = verification.registrationInfo?.credentialPublicKey?.toString() || ''
         // TODO: Save to database
       }
 
@@ -343,7 +343,7 @@ export class AuthService {
         rpID: process.env.RP_ID || 'localhost',
         userVerification: 'required',
         allowCredentials: [{
-          id: user.biometricCredentialId!,
+          id: Buffer.from(user.biometricCredentialId!, 'base64'),
           type: 'public-key'
         }]
       })
@@ -366,14 +366,14 @@ export class AuthService {
 
       // TODO: Get stored challenge from Redis
 
-      const verification = verifyAuthenticationResponse({
+      const verification = await verifyAuthenticationResponse({
         response,
         expectedChallenge: 'stored-challenge', // TODO: Get from Redis
         expectedOrigin: process.env.EXPECTED_ORIGIN || 'http://localhost:3000',
         expectedRPID: process.env.RP_ID || 'localhost',
         authenticator: {
-          credentialID: user.biometricCredentialId!,
-          credentialPublicKey: user.biometricPublicKey!,
+          credentialID: Buffer.from(user.biometricCredentialId!, 'base64'),
+          credentialPublicKey: Buffer.from(user.biometricPublicKey!, 'base64'),
           counter: 0 // TODO: Store and retrieve counter
         }
       })

@@ -210,14 +210,15 @@ export class PaymentsService extends EventEmitter {
       id: randomUUID(),
       type: 'receive',
       status: 'pending',
-      amount,
+      amount: new Decimal(amount),
       currency: 'USD',
       fromUserId: toUserId, // Request from
       toUserId: fromUserId, // Request to
-      fee: 0,
+      fee: new Decimal(0),
       description,
       metadata: {},
-      createdAt: new Date()
+      createdAt: new Date(),
+      updatedAt: new Date()
     }
 
     // TODO: Send notification to requested user
@@ -270,21 +271,22 @@ export class PaymentsService extends EventEmitter {
       id: randomUUID(),
       type: 'transfer',
       status: 'processing',
-      amount: -originalTransaction.amount,
+      amount: originalTransaction.amount.negated(),
       currency: originalTransaction.currency,
       fromUserId: originalTransaction.toUserId,
       toUserId: originalTransaction.fromUserId,
-      fee: 0,
+      fee: new Decimal(0),
       description: `Refund for transaction ${originalTransaction.id}`,
       metadata: {
         originalTransactionId: originalTransaction.id,
         refundReason: reason
       },
-      createdAt: new Date()
+      createdAt: new Date(),
+      updatedAt: new Date()
     }
 
     // TODO: Process refund through provider
-    await this.processPayment(refundTransaction)
+    await this.transactionQueue.add('processPayment', { transactionId: refundTransaction.id })
     
     return refundTransaction
   }
@@ -445,6 +447,10 @@ export class PaymentsService extends EventEmitter {
   async getRealTimeTransactionStatus(transactionId: string): Promise<RealTimeTransaction | null> {
     // TODO: Implement real-time status tracking
     return null
+  }
+
+  async shutdown(): Promise<void> {
+    await this.transactionQueue.close()
   }
 }
 

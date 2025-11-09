@@ -1,4 +1,4 @@
-// PeoplePay Ledger Service
+// Finthos Ledger Service
 // Immutable transaction logging, blockchain integration, and balance calculation
 
 import { randomUUID } from 'crypto'
@@ -281,7 +281,7 @@ export class LedgerService extends EventEmitter {
 
   private async initializeBlockchainListener(): Promise<void> {
     // Listen for Ethereum events
-    this.web3.eth.subscribe('newBlockHeaders', (error, blockHeader) => {
+    this.web3.eth.subscribe('newBlockHeaders', (error: any, blockHeader: any) => {
       if (error) {
         console.error('Block header subscription error:', error)
         return

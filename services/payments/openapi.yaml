@@ -1,14 +1,14 @@
 openapi: 3.0.3
 info:
-  title: PeoplePay Payments Service
+  title: Finthos Payments Service
   description: Core payment processing, transfers, and transaction management
   version: 1.0.0
   contact:
-    name: PeoplePay Team
+    name: Finthos Team
 servers:
   - url: http://localhost:3002
     description: Development server
-  - url: https://payments.peoplepay.com
+  - url: https://payments.finthos.com
     description: Production server
 
 paths:

@@ -1,4 +1,4 @@
-// PeoplePay UI Package - Shared Components
+// Finthos UI Package - Shared Components
 export { default as NavBar } from './components/NavBar'
 
 // Export additional components as they are created

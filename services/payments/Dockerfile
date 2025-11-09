@@ -17,11 +17,11 @@ RUN npm run build
 
 # Create non-root user
 RUN addgroup -g 1001 -S nodejs
-RUN adduser -S peoplepay -u 1001
+RUN adduser -S finthos -u 1001
 
 # Change ownership
-RUN chown -R peoplepay:nodejs /app
-USER peoplepay
+RUN chown -R finthos:nodejs /app
+USER finthos
 
 # Expose port
 EXPOSE 3002
