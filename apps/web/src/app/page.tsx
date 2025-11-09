@@ -49,7 +49,7 @@ function DashboardContent() {
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-2">
-            PeoplePay Dashboard
+            Finthos Dashboard
           </h1>
           <p className="text-muted-foreground">
             Modern payment solutions with real-time features
@@ -71,7 +71,7 @@ function DashboardContent() {
           <div className="lg:col-span-1">
             <ExportTools
               data={filteredTransactions}
-              filename="peoplepay-transactions"
+              filename="Finthos-transactions"
               title="Transaction History"
             />
           </div>
@@ -186,3 +186,4 @@ export default function HomePage() {
     </Suspense>
   )
 }
+

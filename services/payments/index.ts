@@ -1,4 +1,4 @@
-// PeoplePay Payments Service
+// Finthos Payments Service
 // Core payment processing, transfers, and transaction management
 
 import { randomUUID } from 'crypto'

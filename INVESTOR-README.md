@@ -1,8 +1,8 @@
-# PeoplePay Enterprise Platform - Investment Opportunity
+# Finthos Enterprise Platform - Investment Opportunity
 
 ## Executive Summary
 
-**PeoplePay** is a complete, production-ready enterprise fintech platform designed for immediate deployment and revenue generation. This turnkey solution represents a rare opportunity to acquire a fully-developed payment processing ecosystem without the typical 2-3 year development cycle.
+**Finthos** is a complete, production-ready enterprise fintech platform designed for immediate deployment and revenue generation. This turnkey solution represents a rare opportunity to acquire a fully-developed payment processing ecosystem without the typical 2-3 year development cycle.
 
 ---
 

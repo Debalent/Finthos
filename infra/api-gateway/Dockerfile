@@ -13,11 +13,11 @@ COPY . .
 
 # Create non-root user
 RUN addgroup -g 1001 -S nodejs
-RUN adduser -S peoplepay -u 1001
+RUN adduser -S Finthos -u 1001
 
 # Change ownership
-RUN chown -R peoplepay:nodejs /app
-USER peoplepay
+RUN chown -R Finthos:nodejs /app
+USER Finthos
 
 # Expose port
 EXPOSE 3000

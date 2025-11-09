@@ -56,7 +56,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log('🚀 PeoplePay Development Server Started');
+    console.log('🚀 Finthos Development Server Started');
     console.log(`📱 Web App: http://localhost:${PORT}`);
     console.log(`📁 Serving from: ${__dirname}`);
     console.log('');
@@ -69,7 +69,7 @@ server.listen(PORT, () => {
 
 // Graceful shutdown
 process.on('SIGINT', () => {
-    console.log('\n👋 Shutting down PeoplePay server...');
+    console.log('\n👋 Shutting down Finthos server...');
     server.close(() => {
         console.log('✅ Server closed successfully');
         process.exit(0);

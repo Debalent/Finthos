@@ -1,4 +1,4 @@
-// PeoplePay Authentication Service
+// Finthos Authentication Service
 // OAuth2, biometric login, 2FA implementation
 
 import bcrypt from 'bcryptjs'

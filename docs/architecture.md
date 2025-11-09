@@ -1,8 +1,8 @@
-# PeoplePay System Architecture
+# Finthos System Architecture
 
 ## Overview
 
-PeoplePay is designed as a distributed fintech platform with microservices architecture, blockchain integration, and enterprise-grade security.
+Finthos is designed as a distributed fintech platform with microservices architecture, blockchain integration, and enterprise-grade security.
 
 ## System Components
 
@@ -65,3 +65,4 @@ PeoplePay is designed as a distributed fintech platform with microservices archi
 ### Infrastructure & Security
 
 See README.md for complete architecture details and deployment guidelines.
+

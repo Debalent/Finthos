@@ -1,9 +1,9 @@
-# ⚖️ PEOPLEPAY LEGAL DISCLAIMER - SUMMARY
+# ⚖️ Finthos LEGAL DISCLAIMER - SUMMARY
 
-**IMPORTANT**: By accessing PeoplePay demonstration materials, you agree to these terms.
+**IMPORTANT**: By accessing Finthos demonstration materials, you agree to these terms.
 
 ## 🔒 CONFIDENTIALITY AGREEMENT
-- All information is CONFIDENTIAL and proprietary to Demond J. Balentine/PeoplePay Inc.
+- All information is CONFIDENTIAL and proprietary to Demond J. Balentine/Finthos Inc.
 - Use ONLY for acquisition evaluation purposes
 - NO disclosure to third parties without written permission
 - Must return/destroy materials when evaluation complete
@@ -27,9 +27,9 @@
 ## 🚫 PROHIBITED USES
 **YOU CANNOT**:
 - Reverse engineer or copy technology
-- Use information to compete with PeoplePay
+- Use information to compete with Finthos
 - Share information without written permission
-- Recruit PeoplePay employees
+- Recruit Finthos employees
 
 ## ⚖️ LEGAL TERMS
 - **Governing Law**: [Your State] law applies
@@ -52,4 +52,5 @@ demond.balentine@atlasstudents.com
 **SEEK LEGAL COUNSEL**: Consult attorney before making business decisions based on disclosed information.
 
 ---
-**© 2025 PeoplePay Inc. - Confidential and Proprietary Information**
+**© 2025 Finthos Inc. - Confidential and Proprietary Information**
+

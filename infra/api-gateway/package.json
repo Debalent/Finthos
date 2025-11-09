@@ -1,7 +1,7 @@
 {
-  "name": "@peoplepay/api-gateway",
+  "name": "@Finthos/api-gateway",
   "version": "1.0.0",
-  "description": "API Gateway for PeoplePay microservices",
+  "description": "API Gateway for Finthos microservices",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -21,6 +21,6 @@
     "proxy",
     "microservices"
   ],
-  "author": "PeoplePay Team",
+  "author": "Finthos Team",
   "license": "PROPRIETARY"
 }

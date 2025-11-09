@@ -1,8 +1,8 @@
-# PeoplePay Acquisition Summary
+# Finthos Acquisition Summary
 
 ## Transaction Overview
 
-**Platform**: PeoplePay Enterprise Fintech Solution  
+**Platform**: Finthos Enterprise Fintech Solution  
 **Transaction**: Complete Asset Acquisition  
 **Investment**: $2.5M - $3.5M  
 **Timeline**: 30-day closing preferred  
@@ -11,7 +11,7 @@
 
 ## Executive Summary
 
-PeoplePay represents a fully-developed, production-ready enterprise fintech platform available for immediate acquisition. This turnkey solution eliminates the typical 24-36 month development cycle while providing instant access to the $4.9 trillion digital payments market.
+Finthos represents a fully-developed, production-ready enterprise fintech platform available for immediate acquisition. This turnkey solution eliminates the typical 24-36 month development cycle while providing instant access to the $4.9 trillion digital payments market.
 
 ### What You're Acquiring
 - **Complete fintech platform** with web and mobile applications
@@ -185,14 +185,14 @@ node demo-server.js
 
 ### 3. Acquisition Discussion
 **Contact**: demond.balentine@outlook.com  
-**Platform**: [GitHub Repository](https://github.com/Debalent/PeoplePay)  
+**Platform**: [GitHub Repository](https://github.com/Debalent/Finthos)  
 **Timeline**: 30-day closing process preferred  
 
 ---
 
 ## Investment Recommendation
 
-### Why Acquire PeoplePay Now?
+### Why Acquire Finthos Now?
 
 **Strategic Value**
 - Immediate entry into $4.9T digital payments market

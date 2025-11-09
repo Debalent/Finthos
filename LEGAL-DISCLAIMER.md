@@ -1,9 +1,9 @@
 # ⚖️ LEGAL DISCLAIMER AND CONFIDENTIALITY AGREEMENT
 
-## PEOPLEPAY ENTERPRISE PLATFORM DEMONSTRATION
+## Finthos ENTERPRISE PLATFORM DEMONSTRATION
 
 **Effective Date**: October 17, 2025  
-**Disclosing Party**: Demond J. Balentine / PeoplePay Inc.  
+**Disclosing Party**: Demond J. Balentine / Finthos Inc.  
 **Receiving Party**: [Buyer Entity Name]  
 
 ---
@@ -39,7 +39,7 @@ Shall be considered "Confidential Information" and is disclosed solely for evalu
 
 ### 1. "AS IS" BASIS DISCLAIMER
 
-**THE PEOPLEPAY PLATFORM AND ALL RELATED MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:**
+**THE Finthos PLATFORM AND ALL RELATED MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:**
 
 - **Merchantability**: No guarantee of commercial viability
 - **Fitness for Purpose**: No warranty for specific use cases
@@ -49,7 +49,7 @@ Shall be considered "Confidential Information" and is disclosed solely for evalu
 
 ### 2. LIMITATION OF LIABILITY
 
-**IN NO EVENT SHALL DEMOND J. BALENTINE, PEOPLEPAY INC., OR ANY AFFILIATES BE LIABLE FOR:**
+**IN NO EVENT SHALL DEMOND J. BALENTINE, Finthos INC., OR ANY AFFILIATES BE LIABLE FOR:**
 
 #### A. Direct Damages
 - Financial losses from business decisions based on disclosed information
@@ -219,7 +219,7 @@ Shall be considered "Confidential Information" and is disclosed solely for evalu
 
 ### FOR RECEIVING PARTY (BUYER):
 
-By accessing the PeoplePay demonstration materials, downloading files, or participating in platform demonstrations, Receiving Party acknowledges:
+By accessing the Finthos demonstration materials, downloading files, or participating in platform demonstrations, Receiving Party acknowledges:
 
 1. **Understanding**: Full comprehension of all terms and conditions
 2. **Agreement**: Binding acceptance of all provisions herein
@@ -230,9 +230,9 @@ By accessing the PeoplePay demonstration materials, downloading files, or partic
 
 ### FOR DISCLOSING PARTY:
 
-**Demond J. Balentine**, as Founder and CEO of PeoplePay Inc., represents:
+**Demond J. Balentine**, as Founder and CEO of Finthos Inc., represents:
 
-1. **Authority**: Legal authority to disclose and negotiate regarding PeoplePay platform
+1. **Authority**: Legal authority to disclose and negotiate regarding Finthos platform
 2. **Ownership**: Legitimate ownership or control of disclosed intellectual property
 3. **Accuracy**: Good faith effort to provide accurate information
 4. **Compliance**: Agreement to negotiate in good faith if terms are acceptable
@@ -302,7 +302,7 @@ Before making any business or investment decisions based on disclosed informatio
 **Document Information:**
 - **Version**: 1.0 (Initial Release)
 - **Date**: October 17, 2025
-- **Author**: Demond J. Balentine / PeoplePay Inc.
+- **Author**: Demond J. Balentine / Finthos Inc.
 - **Review**: Legal compliance review recommended
 - **Updates**: May be modified with written notice
 
@@ -312,7 +312,7 @@ Before making any business or investment decisions based on disclosed informatio
 
 ## ✅ FINAL ACKNOWLEDGMENT
 
-**BY PROCEEDING WITH EVALUATION OF PEOPLEPAY PLATFORM, RECEIVING PARTY CONFIRMS:**
+**BY PROCEEDING WITH EVALUATION OF Finthos PLATFORM, RECEIVING PARTY CONFIRMS:**
 
 ☑️ **Read and Understood**: Complete review of all terms and conditions  
 ☑️ **Legal Authority**: Authorized to accept on behalf of organization  
@@ -324,7 +324,7 @@ Before making any business or investment decisions based on disclosed informatio
 
 ---
 
-**© 2025 PeoplePay Inc. - All Rights Reserved**  
+**© 2025 Finthos Inc. - All Rights Reserved**  
 **This document contains confidential and proprietary information protected by law.**
 
 ---

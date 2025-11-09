@@ -1,4 +1,4 @@
--- PeoplePay Database Schema
+-- Finthos Database Schema
 -- PostgreSQL initialization script
 
 -- Enable UUID extension
@@ -228,7 +228,7 @@ $$ LANGUAGE plpgsql;
 
 -- Insert some sample data for development
 INSERT INTO users (email, password_hash, kyc_level) VALUES
-('admin@peoplepay.com', '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj8JZwHd5Jm', 'premium'), -- password: admin123
+('admin@Finthos.com', '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj8JZwHd5Jm', 'premium'), -- password: admin123
 ('user@example.com', '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj8JZwHd5Jm', 'verified'); -- password: admin123
 
 -- Insert sample exchange rates

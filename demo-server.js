@@ -79,7 +79,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log('🎯 PeoplePay DEMO Server - Ready for Buyers!');
+    console.log('🎯 Finthos DEMO Server - Ready for Buyers!');
     console.log('='.repeat(50));
     console.log(`🌐 Demo URL: http://localhost:${PORT}`);
     console.log(`📱 Main Dashboard: http://localhost:${PORT}`);
@@ -104,7 +104,7 @@ process.on('uncaughtException', (err) => {
 });
 
 process.on('SIGINT', () => {
-    console.log('\n👋 Demo session ended. Thank you for viewing PeoplePay!');
+    console.log('\n👋 Demo session ended. Thank you for viewing Finthos!');
     server.close(() => {
         console.log('✅ Demo server closed successfully');
         process.exit(0);

@@ -1,13 +1,13 @@
 # 📧 Professional Package for Prospective Buyers
 
-## From: Demond J. Balentine, CEO & Founder, PeoplePay
+## From: Demond J. Balentine, CEO & Founder, Finthos
 ## Date: October 17, 2025
 
 ---
 
 Dear Arlo,
 
-Thank you for your interest in PeoplePay. As requested, I've prepared a comprehensive package including the full platform walkthrough and detailed app store deployment strategy.
+Thank you for your interest in Finthos. As requested, I've prepared a comprehensive package including the full platform walkthrough and detailed app store deployment strategy.
 
 ## 📦 Complete Package Contents
 
@@ -124,21 +124,21 @@ I'm available for immediate discussion and can provide:
 **Preferred**: Phone call or video conference for initial discussion
 
 ### Confidentiality
-**IMPORTANT**: All materials provided are confidential and proprietary to PeoplePay Inc. By accessing these materials, you agree to the terms outlined in LEGAL-DISCLAIMER.md. This information is shared exclusively for your evaluation under mutual confidentiality agreement with full legal protection for both parties.
+**IMPORTANT**: All materials provided are confidential and proprietary to Finthos Inc. By accessing these materials, you agree to the terms outlined in LEGAL-DISCLAIMER.md. This information is shared exclusively for your evaluation under mutual confidentiality agreement with full legal protection for both parties.
 
 ## 🚀 Ready to Transform Fintech Together?
 
-Arlo, I believe PeoplePay represents a unique opportunity to acquire a production-ready enterprise fintech platform at an optimal market entry point. The combination of complete compliance, advanced technology, and proven architecture creates significant competitive advantages in the rapidly growing digital payments market.
+Arlo, I believe Finthos represents a unique opportunity to acquire a production-ready enterprise fintech platform at an optimal market entry point. The combination of complete compliance, advanced technology, and proven architecture creates significant competitive advantages in the rapidly growing digital payments market.
 
-I look forward to discussing how PeoplePay aligns with your investment strategy and answering any questions you may have after reviewing the comprehensive materials.
+I look forward to discussing how Finthos aligns with your investment strategy and answering any questions you may have after reviewing the comprehensive materials.
 
 Best regards,
 
 **Demond J. Balentine**  
-Founder & CEO, PeoplePay  
+Founder & CEO, Finthos  
 demond.balentine@atlasstudents.com  
 +1 (555) 123-4567
 
 ---
 
-*© 2025 PeoplePay Inc. - Confidential Business Package for Prospective Buyers*
+*© 2025 Finthos Inc. - Confidential Business Package for Prospective Buyers*
