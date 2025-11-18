@@ -1,14 +1,14 @@
 openapi: 3.0.3
 info:
-  title: Finthos Ledger Service
+  title: PeopleTrustPay Ledger Service
   description: Immutable ledger service with blockchain integration and balance calculation
   version: 1.0.0
   contact:
-    name: Finthos Team
+    name: PeopleTrustPay Team
 servers:
   - url: http://localhost:3003
     description: Development server
-  - url: https://ledger.finthos.com
+  - url: https://ledger.PeopleTrustPay.com
     description: Production server
 
 paths:

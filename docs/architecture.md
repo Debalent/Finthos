@@ -1,8 +1,8 @@
-# Finthos System Architecture
+# PeopleTrustPay System Architecture
 
 ## Overview
 
-Finthos is designed as a distributed fintech platform with microservices architecture, blockchain integration, and enterprise-grade security.
+PeopleTrustPay is designed as a distributed fintech platform with microservices architecture, blockchain integration, and enterprise-grade security.
 
 ## System Components
 

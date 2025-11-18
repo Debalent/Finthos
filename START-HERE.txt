@@ -1,5 +1,5 @@
 ====================================================================
-                   Finthos ENTERPRISE DEMO
+                   PeopleTrustPay ENTERPRISE DEMO
                     Professional Fintech Platform
 ====================================================================
 
@@ -37,7 +37,7 @@ LEGAL-DISCLAIMER.md. All information is proprietary and protected.
 • Email: demond.balentine@atlasstudents.com
 • Phone: +1 (555) 123-4567
 • LinkedIn: /in/demond-balentine
-• GitHub: https://github.com/Debalent/Finthos
+• GitHub: https://github.com/Debalent/PeopleTrustPay
 
 Demo prepared for: Prospective Buyers
 Contact: Demond J. Balentine, Founder & CEO
@@ -54,5 +54,5 @@ Once running at localhost:3001:
 • Need Node.js? Download from: https://nodejs.org
 • Questions? Check CLIENT-SETUP-GUIDE.md for details
 
-© 2025 Finthos Inc. - Confidential Demo Materials
+© 2025 PeopleTrustPay Inc. - Confidential Demo Materials
 ====================================================================

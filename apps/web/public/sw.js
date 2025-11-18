@@ -1,7 +1,7 @@
-// Service Worker for Finthos PWA
-const CACHE_NAME = 'Finthos-v1'
-const STATIC_CACHE = 'Finthos-static-v1'
-const DYNAMIC_CACHE = 'Finthos-dynamic-v1'
+// Service Worker for PeopleTrustPay PWA
+const CACHE_NAME = 'PeopleTrustPay-v1'
+const STATIC_CACHE = 'PeopleTrustPay-static-v1'
+const DYNAMIC_CACHE = 'PeopleTrustPay-dynamic-v1'
 
 // Assets to cache immediately
 const STATIC_ASSETS = [

@@ -1,4 +1,4 @@
-# 📱 Finthos Mobile App Store Deployment & Features Guide
+# 📱 PeopleTrustPay Mobile App Store Deployment & Features Guide
 
 ## Complete Visual Guide for iOS App Store & Google Play Store Submission
 
@@ -34,7 +34,7 @@
 ```
 
 **Required Information:**
-- Business Legal Name: Finthos Inc.
+- Business Legal Name: PeopleTrustPay Inc.
 - D-U-N-S Number: [To be obtained]
 - Bank Account Information for revenue
 - Tax forms (W-9 for US entities)
@@ -46,8 +46,8 @@
 [SCREENSHOT PLACEHOLDER]
 - App Store Connect interface showing:
   - "Create New App" dialog
-  - App Name: "Finthos - Digital Payments"
-  - Bundle ID: com.Finthos.mobile
+  - App Name: "PeopleTrustPay - Digital Payments"
+  - Bundle ID: com.PeopleTrustPay.mobile
   - Platform: iOS
   - Primary Language: English (U.S.)
 ```
@@ -58,7 +58,7 @@
 ```
 [SCREENSHOT PLACEHOLDER]
 - App information form showing:
-  - Name: Finthos
+  - Name: PeopleTrustPay
   - Subtitle: Secure Digital Payments & Crypto Wallet
   - Category: Finance
   - Content Rating: 17+ (Financial services)
@@ -67,9 +67,9 @@
 
 **App Store Description:**
 ```
-Finthos - Enterprise-Grade Digital Payment Platform
+PeopleTrustPay - Enterprise-Grade Digital Payment Platform
 
-Transform your financial transactions with Finthos's secure, blockchain-enabled payment platform. Built for businesses and individuals who demand enterprise-level security with consumer-friendly design.
+Transform your financial transactions with PeopleTrustPay's secure, blockchain-enabled payment platform. Built for businesses and individuals who demand enterprise-level security with consumer-friendly design.
 
 KEY FEATURES:
 • Instant peer-to-peer payments
@@ -93,7 +93,7 @@ FOR BUSINESSES:
 • Multi-user account management
 • Regulatory compliance tools
 
-Download Finthos today and join thousands of users who trust us with their financial transactions.
+Download PeopleTrustPay today and join thousands of users who trust us with their financial transactions.
 ```
 
 ### Step 4: App Screenshots (iPhone 15 Pro Max - 6.7")
@@ -166,7 +166,7 @@ Download Finthos today and join thousands of users who trust us with their finan
 ```
 
 **Demo Account for Apple Review:**
-- Username: apple.reviewer@Finthos.demo
+- Username: apple.reviewer@PeopleTrustPay.demo
 - Password: AppleReview2025!
 - Note: Full payment functionality available in demo mode
 
@@ -192,7 +192,7 @@ Download Finthos today and join thousands of users who trust us with their finan
 ```
 [SCREENSHOT PLACEHOLDER]
 - Create app interface showing:
-  - App name: Finthos
+  - App name: PeopleTrustPay
   - Default language: English (United States)
   - App or game: App
   - Free or paid: Free with in-app purchases
@@ -213,9 +213,9 @@ Download Finthos today and join thousands of users who trust us with their finan
 
 **Google Play Description:**
 ```
-Finthos: The Future of Digital Payments
+PeopleTrustPay: The Future of Digital Payments
 
-Experience the next generation of financial technology with Finthos's comprehensive digital payment platform. Designed for security, built for scale.
+Experience the next generation of financial technology with PeopleTrustPay's comprehensive digital payment platform. Designed for security, built for scale.
 
 ✅ INSTANT PAYMENTS
 Send and receive money instantly with our real-time payment processing engine.
@@ -233,7 +233,7 @@ Multi-currency support with competitive exchange rates.
 Advanced analytics, API integration, and white-label solutions.
 
 TRUSTED BY BUSINESSES WORLDWIDE
-Join thousands of businesses who rely on Finthos for their payment infrastructure.
+Join thousands of businesses who rely on PeopleTrustPay for their payment infrastructure.
 
 Download now and transform how you handle money.
 ```
@@ -244,7 +244,7 @@ Download now and transform how you handle money.
 ```
 [SCREENSHOT PLACEHOLDER]
 - Onboarding screen showing:
-  - Finthos logo and branding
+  - PeopleTrustPay logo and branding
   - "Welcome to the future of payments"
   - Sign up and login options
   - Security badges and certifications
@@ -502,7 +502,7 @@ Download now and transform how you handle money.
 ```
 Video Storyboard:
 
-Scene 1 (0-5s): App launch with Finthos logo
+Scene 1 (0-5s): App launch with PeopleTrustPay logo
 Scene 2 (5-10s): Dashboard overview with transaction data
 Scene 3 (10-15s): Send money flow demonstration
 Scene 4 (15-20s): Security features highlight
@@ -510,10 +510,10 @@ Scene 5 (20-25s): Business analytics preview
 Scene 6 (25-30s): Call-to-action with download prompt
 
 Voiceover Script:
-"Transform your financial transactions with Finthos. 
+"Transform your financial transactions with PeopleTrustPay. 
 Send money instantly, manage crypto, track business analytics, 
 all with enterprise-grade security. 
-Download Finthos today - the future of digital payments."
+Download PeopleTrustPay today - the future of digital payments."
 ```
 
 ---
@@ -596,4 +596,4 @@ Download Finthos today - the future of digital payments."
 
 ---
 
-*© 2025 Finthos Inc. - App Store Deployment Guide - Confidential Business Documentation*
+*© 2025 PeopleTrustPay Inc. - App Store Deployment Guide - Confidential Business Documentation*

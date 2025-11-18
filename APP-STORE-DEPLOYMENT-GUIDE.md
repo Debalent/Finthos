@@ -1,4 +1,4 @@
-# 📱 Finthos Mobile App Store Deployment Guide
+# 📱 PeopleTrustPay Mobile App Store Deployment Guide
 
 ## For: Prospective Buyers
 
@@ -8,7 +8,7 @@
 
 ## 🎯 Overview
 
-This comprehensive guide provides step-by-step instructions for deploying the Finthos enterprise fintech platform to both Apple App Store and Google Play Store, including all technical requirements, compliance considerations, and business setup.
+This comprehensive guide provides step-by-step instructions for deploying the PeopleTrustPay enterprise fintech platform to both Apple App Store and Google Play Store, including all technical requirements, compliance considerations, and business setup.
 
 ---
 
@@ -48,8 +48,8 @@ This comprehensive guide provides step-by-step instructions for deploying the Fi
    - Access: <https://appstoreconnect.apple.com>
    - Create new app entry
    - Configure app information:
-     - **App Name**: "Finthos - Digital Payments"
-     - **Bundle ID**: com.Finthos.mobile
+     - **App Name**: "PeopleTrustPay - Digital Payments"
+     - **Bundle ID**: com.PeopleTrustPay.mobile
      - **Category**: Finance
      - **Age Rating**: 17+ (Financial services)
 
@@ -61,15 +61,15 @@ cd mobile
 npx react-native run-ios --configuration Release
 
 # Create iOS Archive
-xcodebuild -workspace ios/Finthos.xcworkspace \
-           -scheme Finthos \
+xcodebuild -workspace ios/PeopleTrustPay.xcworkspace \
+           -scheme PeopleTrustPay \
            -configuration Release \
-           -archivePath build/Finthos.xcarchive \
+           -archivePath build/PeopleTrustPay.xcarchive \
            archive
 
 # Create IPA for distribution
 xcodebuild -exportArchive \
-           -archivePath build/Finthos.xcarchive \
+           -archivePath build/PeopleTrustPay.xcarchive \
            -exportPath build/ \
            -exportOptionsPlist ExportOptions.plist
 ```
@@ -88,12 +88,12 @@ xcodebuild -exportArchive \
    - Release timing: Manual release after approval
 
 3. **App Store Information**
-   - **App Name**: Finthos - Digital Payments
+   - **App Name**: PeopleTrustPay - Digital Payments
    - **Subtitle**: Enterprise Fintech Platform
    - **Description**:
 
      ```text
-     Finthos delivers enterprise-grade digital payment solutions with 
+     PeopleTrustPay delivers enterprise-grade digital payment solutions with 
      blockchain integration, regulatory compliance, and real-time processing.
 
      KEY FEATURES:
@@ -142,7 +142,7 @@ xcodebuild -exportArchive \
 
    ```text
    Demo Account Credentials:
-   Email: demo@Finthos.com
+   Email: demo@PeopleTrustPay.com
    Password: DemoReviewer2025!
    
    Testing Instructions:
@@ -171,7 +171,7 @@ xcodebuild -exportArchive \
 2. **Create Application**
    - Choose "Create app"
    - App details:
-     - **App name**: Finthos - Digital Payments
+     - **App name**: PeopleTrustPay - Digital Payments
      - **Default language**: English (United States)
      - **App or game**: App
      - **Free or paid**: Free
@@ -195,12 +195,12 @@ cd android
 ### Step 3: Store Listing Configuration
 
 1. **Main Store Listing**
-   - **App name**: Finthos - Digital Payments
+   - **App name**: PeopleTrustPay - Digital Payments
    - **Short description**: Enterprise fintech platform with blockchain security
    - **Full description**:
 
      ```text
-     Transform your digital payment experience with Finthos - the enterprise-grade 
+     Transform your digital payment experience with PeopleTrustPay - the enterprise-grade 
      fintech platform trusted by businesses worldwide.
 
      🚀 POWERFUL FEATURES
@@ -229,7 +229,7 @@ cd android
      Perfect for individuals, small businesses, and enterprise clients 
      requiring secure, compliant, and scalable payment infrastructure.
 
-     Download Finthos today and experience the future of digital payments!
+     Download PeopleTrustPay today and experience the future of digital payments!
      ```
 
 2. **Graphics Assets**
@@ -453,9 +453,9 @@ import {
 } from 'react-native-iap';
 
 const productIds = [
-  'com.Finthos.premium.monthly',
-  'com.Finthos.enterprise.monthly',
-  'com.Finthos.analytics.monthly'
+  'com.PeopleTrustPay.premium.monthly',
+  'com.PeopleTrustPay.enterprise.monthly',
+  'com.PeopleTrustPay.analytics.monthly'
 ];
 
 // Initialize connection and get products
@@ -474,9 +474,9 @@ const setupIAP = async () => {
 
 1. **Support Channels**
    - In-app chat support
-   - Email: <support@Finthos.com>
+   - Email: <support@PeopleTrustPay.com>
    - Phone: +1 (555) 123-4567
-   - Knowledge base: <help.Finthos.com>
+   - Knowledge base: <help.PeopleTrustPay.com>
 
 2. **Response Time Commitments**
    - Critical issues: 1 hour
@@ -570,7 +570,7 @@ const setupIAP = async () => {
 **Email**: <demond.balentine@atlasstudents.com>  
 **Phone**: +1 (555) 123-4567  
 **LinkedIn**: /in/demond-balentine  
-**GitHub**: <https://github.com/Debalent/Finthos>
+**GitHub**: <https://github.com/Debalent/PeopleTrustPay>
 
 **Available for:**
 
@@ -582,13 +582,13 @@ const setupIAP = async () => {
 
 ---
 
-*This guide represents the complete deployment strategy for Finthos mobile applications. All estimates are based on current market conditions and industry standards as of October 2025.*
+*This guide represents the complete deployment strategy for PeopleTrustPay mobile applications. All estimates are based on current market conditions and industry standards as of October 2025.*
 
 ---
 
 ---
 
-© 2025 Finthos Inc. - Confidential Business Documentation
+© 2025 PeopleTrustPay Inc. - Confidential Business Documentation
  
  
 

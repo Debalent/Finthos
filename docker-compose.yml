@@ -5,8 +5,8 @@ services:
   postgres:
     image: postgres:15
     environment:
-      POSTGRES_DB: Finthos
-      POSTGRES_USER: Finthos
+      POSTGRES_DB: PeopleTrustPay
+      POSTGRES_USER: PeopleTrustPay
       POSTGRES_PASSWORD: ${DB_PASSWORD:-dev-password}
     ports:
       - "5432:5432"
@@ -14,7 +14,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/db/init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U Finthos -d Finthos"]
+      test: ["CMD-SHELL", "pg_isready -U PeopleTrustPay -d PeopleTrustPay"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -43,8 +43,8 @@ services:
       - JWT_SECRET=${JWT_SECRET:-dev-jwt-secret}
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=Finthos
-      - DB_USER=Finthos
+      - DB_NAME=PeopleTrustPay
+      - DB_USER=PeopleTrustPay
       - DB_PASSWORD=${DB_PASSWORD:-dev-password}
       - REDIS_URL=redis://redis:6379
       - RP_ID=${RP_ID:-localhost}
@@ -73,8 +73,8 @@ services:
       - PORT=3002
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=Finthos
-      - DB_USER=Finthos
+      - DB_NAME=PeopleTrustPay
+      - DB_USER=PeopleTrustPay
       - DB_PASSWORD=${DB_PASSWORD:-dev-password}
       - REDIS_URL=redis://redis:6379
       - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
@@ -106,8 +106,8 @@ services:
       - PORT=3003
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=Finthos
-      - DB_USER=Finthos
+      - DB_NAME=PeopleTrustPay
+      - DB_USER=PeopleTrustPay
       - DB_PASSWORD=${DB_PASSWORD:-dev-password}
       - REDIS_URL=redis://redis:6379
       - ETHEREUM_RPC_URL=${ETHEREUM_RPC_URL}

@@ -1,6 +1,6 @@
 {
-  "name": "Finthos",
-  "short_name": "Finthos",
+  "name": "PeopleTrustPay",
+  "short_name": "PeopleTrustPay",
   "description": "Modern payment solutions for businesses and individuals",
   "start_url": "/",
   "display": "standalone",

@@ -1,10 +1,10 @@
-# Finthos Enterprise Platform
+# PeopleTrustPay Enterprise Platform
 
-![Finthos Logo](./assets/FinthosLogo.jpg)
+![PeopleTrustPay Logo](./assets/PeopleTrustPayLogo.png)
 
 ## 🎯 Investment Opportunity - Complete Fintech Platform Acquisition
 
-**Finthos** is a production-ready, enterprise-grade fintech platform available for immediate acquisition. This turnkey solution represents 2+ years of development and $800K+ investment, now available at a significant discount to development cost.
+**PeopleTrustPay** is a production-ready, enterprise-grade fintech platform available for immediate acquisition. This turnkey solution represents 2+ years of development and $800K+ investment, now available at a significant discount to development cost.
 
 ### 🚨 Investment Highlights
 
@@ -44,7 +44,7 @@ node demo-server.js
 
 ### Production-Ready Monorepo Structure
 
-Finthos is structured as a monorepo with the following components:
+PeopleTrustPay is structured as a monorepo with the following components:
 
 ### Apps
 
@@ -302,5 +302,5 @@ node demo-server.js
 
 ## License
 
-Copyright © 2025 Finthos. All rights reserved.
+Copyright © 2025 PeopleTrustPay. All rights reserved.
 

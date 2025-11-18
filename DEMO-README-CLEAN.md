@@ -1,8 +1,8 @@
-# 🚀 Finthos Demo - Quick Setup Guide
+# 🚀 PeopleTrustPay Demo - Quick Setup Guide
 
 ## Overview
 
-This is a **live demonstration** of the Finthos enterprise fintech platform, showcasing real features, compliance frameworks, and business capabilities for potential buyers and investors.
+This is a **live demonstration** of the PeopleTrustPay enterprise fintech platform, showcasing real features, compliance frameworks, and business capabilities for potential buyers and investors.
 
 ## Getting Started
 
@@ -74,8 +74,8 @@ This is a **live demonstration** of the Finthos enterprise fintech platform, sho
 
 **LinkedIn**: /in/demond-balentine
 
-**GitHub**: <https://github.com/Debalent/Finthos>
+**GitHub**: <https://github.com/Debalent/PeopleTrustPay>
 
 ---
 
-*This demo represents the Finthos platform architecture and capabilities. Actual implementation may include additional features and customizations based on specific requirements.*
+*This demo represents the PeopleTrustPay platform architecture and capabilities. Actual implementation may include additional features and customizations based on specific requirements.*

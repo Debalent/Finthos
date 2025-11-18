@@ -1,8 +1,8 @@
-# Finthos Acquisition Summary
+# PeopleTrustPay Acquisition Summary
 
 ## Transaction Overview
 
-**Platform**: Finthos Enterprise Fintech Solution  
+**Platform**: PeopleTrustPay Enterprise Fintech Solution  
 **Transaction**: Complete Asset Acquisition  
 **Investment**: $2.5M - $3.5M  
 **Timeline**: 30-day closing preferred  
@@ -11,7 +11,7 @@
 
 ## Executive Summary
 
-Finthos represents a fully-developed, production-ready enterprise fintech platform available for immediate acquisition. This turnkey solution eliminates the typical 24-36 month development cycle while providing instant access to the $4.9 trillion digital payments market.
+PeopleTrustPay represents a fully-developed, production-ready enterprise fintech platform available for immediate acquisition. This turnkey solution eliminates the typical 24-36 month development cycle while providing instant access to the $4.9 trillion digital payments market.
 
 ### What You're Acquiring
 - **Complete fintech platform** with web and mobile applications
@@ -185,14 +185,14 @@ node demo-server.js
 
 ### 3. Acquisition Discussion
 **Contact**: demond.balentine@outlook.com  
-**Platform**: [GitHub Repository](https://github.com/Debalent/Finthos)  
+**Platform**: [GitHub Repository](https://github.com/Debalent/PeopleTrustPay)  
 **Timeline**: 30-day closing process preferred  
 
 ---
 
 ## Investment Recommendation
 
-### Why Acquire Finthos Now?
+### Why Acquire PeopleTrustPay Now?
 
 **Strategic Value**
 - Immediate entry into $4.9T digital payments market

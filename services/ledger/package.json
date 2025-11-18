@@ -1,5 +1,5 @@
 {
-  "name": "@finthos/ledger-service",
+  "name": "@PeopleTrustPay/ledger-service",
   "version": "1.0.0",
   "description": "Immutable ledger service with blockchain integration and balance calculation",
   "main": "index.ts",
@@ -44,6 +44,6 @@
     "audit",
     "cryptocurrency"
   ],
-  "author": "Finthos Team",
+  "author": "PeopleTrustPay Team",
   "license": "PROPRIETARY"
 }

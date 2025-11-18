@@ -1,7 +1,7 @@
-# 🚀 Finthos Enterprise Demo - Quick Start
+# 🚀 PeopleTrustPay Enterprise Demo - Quick Start
 
 ## What's Included
-This ZIP contains the complete **Finthos Enterprise Fintech Platform** ready for demonstration.
+This ZIP contains the complete **PeopleTrustPay Enterprise Fintech Platform** ready for demonstration.
 
 ## 🎯 Instant Demo Launch (30 seconds)
 
@@ -117,9 +117,9 @@ Once the server is running at `localhost:3001`:
 ## 📞 Contact & Next Steps
 
 ### Immediate Inquiries
-- **Email**: sales@Finthos.com
+- **Email**: sales@PeopleTrustPay.com
 - **Phone**: +1 (555) 123-4567
-- **LinkedIn**: /company/Finthos-fintech
+- **LinkedIn**: /company/PeopleTrustPay-fintech
 
 ### Available for Discussion
 - **Technical Architecture** - Deep-dive sessions with engineering team
@@ -154,4 +154,4 @@ This platform represents **2+ years of development** by experienced fintech engi
 
 ---
 
-*© 2025 Finthos Inc. Confidential business demonstration materials. All rights reserved.*
+*© 2025 PeopleTrustPay Inc. Confidential business demonstration materials. All rights reserved.*

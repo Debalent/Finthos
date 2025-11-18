@@ -1,4 +1,4 @@
-// Finthos Authentication Service
+// PeopleTrustPay Authentication Service
 // OAuth2, biometric login, 2FA implementation
 
 import bcrypt from 'bcryptjs'
@@ -227,8 +227,8 @@ export class AuthService {
       }
 
       const secret = speakeasy.generateSecret({
-        name: `Finthos (${user.email})`,
-        issuer: 'Finthos'
+        name: `PeopleTrustPay (${user.email})`,
+        issuer: 'PeopleTrustPay'
       })
 
       user.twoFactorSecret = secret.base32
@@ -279,7 +279,7 @@ export class AuthService {
       }
 
       const options = generateRegistrationOptions({
-        rpName: 'Finthos',
+        rpName: 'PeopleTrustPay',
         rpID: process.env.RP_ID || 'localhost',
         userID: userId,
         userName: user.email,

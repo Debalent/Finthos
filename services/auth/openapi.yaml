@@ -1,14 +1,14 @@
 openapi: 3.0.3
 info:
-  title: Finthos Authentication Service
+  title: PeopleTrustPay Authentication Service
   description: Authentication service with OAuth2, biometric login, and 2FA
   version: 1.0.0
   contact:
-    name: Finthos Team
+    name: PeopleTrustPay Team
 servers:
   - url: http://localhost:3001
     description: Development server
-  - url: https://auth.finthos.com
+  - url: https://auth.PeopleTrustPay.com
     description: Production server
 
 paths:

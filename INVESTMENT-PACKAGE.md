@@ -1,8 +1,8 @@
-# Finthos Investment Package - Executive Summary
+# PeopleTrustPay Investment Package - Executive Summary
 
 ## Transaction Overview
 
-**Asset**: Finthos Enterprise Fintech Platform  
+**Asset**: PeopleTrustPay Enterprise Fintech Platform  
 **Transaction Type**: Complete Asset Acquisition  
 **Investment Range**: $2.5M - $3.5M  
 **Closing Timeline**: 30 days preferred  
@@ -11,7 +11,7 @@
 
 ## Executive Summary
 
-Finthos represents a fully-developed, production-ready enterprise fintech platform available for immediate acquisition. This turnkey solution eliminates the typical 24-36 month development cycle while providing instant access to the rapidly growing digital payments market.
+PeopleTrustPay represents a fully-developed, production-ready enterprise fintech platform available for immediate acquisition. This turnkey solution eliminates the typical 24-36 month development cycle while providing instant access to the rapidly growing digital payments market.
 
 ### Key Investment Highlights
 
@@ -97,7 +97,7 @@ Finthos represents a fully-developed, production-ready enterprise fintech platfo
 - **PayPal**: $70B market cap, consumer focus
 - **Adyen**: $25B valuation, enterprise focus
 
-**Finthos Advantage**: Complete solution at acquisition cost significantly below competitors' development investments.
+**PeopleTrustPay Advantage**: Complete solution at acquisition cost significantly below competitors' development investments.
 
 ### Target Market Segments
 
@@ -240,7 +240,7 @@ Finthos represents a fully-developed, production-ready enterprise fintech platfo
 
 **Contact Information**:
 - **Email**: demond.balentine@outlook.com
-- **Platform**: [GitHub Repository](https://github.com/Debalent/Finthos)
+- **Platform**: [GitHub Repository](https://github.com/Debalent/PeopleTrustPay)
 - **Documentation**: Complete technical and business package available
 
 ---

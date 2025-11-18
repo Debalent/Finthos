@@ -1,6 +1,6 @@
 # 📧 LEGALLY PROTECTED EMAIL TEMPLATE FOR PROSPECTS
 
-## Subject: Finthos Enterprise Platform - Confidential Business Opportunity
+## Subject: PeopleTrustPay Enterprise Platform - Confidential Business Opportunity
 
 ---
 
@@ -10,7 +10,7 @@ I hope this message finds you well. I'm writing to share a unique enterprise fin
 
 ## ⚖️ IMPORTANT LEGAL NOTICE
 
-**By accessing the attached materials or continuing to read this email, you agree to maintain strict confidentiality** and are bound by the terms outlined in the attached LEGAL-DISCLAIMER.md document. All information shared is proprietary and confidential to Finthos Inc.
+**By accessing the attached materials or continuing to read this email, you agree to maintain strict confidentiality** and are bound by the terms outlined in the attached LEGAL-DISCLAIMER.md document. All information shared is proprietary and confidential to PeopleTrustPay Inc.
 
 **Key Legal Protections:**
 - All information provided "AS IS" without warranty
@@ -19,7 +19,7 @@ I hope this message finds you well. I'm writing to share a unique enterprise fin
 - Use restricted to acquisition evaluation only
 - No reverse engineering or competitive use permitted
 
-## 🚀 Finthos Enterprise Platform Overview
+## 🚀 PeopleTrustPay Enterprise Platform Overview
 
 **Market Opportunity**: $7.3 trillion global payment market with 23% annual growth
 
@@ -47,7 +47,7 @@ I hope this message finds you well. I'm writing to share a unique enterprise fin
 
 ## 🎯 Competitive Advantages
 
-**Why Finthos Represents Unique Value:**
+**Why PeopleTrustPay Represents Unique Value:**
 - **Time Advantage**: 18+ months development time saved
 - **Compliance Ready**: All major certifications pre-built
 - **Technology Leadership**: Blockchain-native for Web3 future
@@ -98,7 +98,7 @@ I'm available for immediate confidential discussion to answer questions and prov
 
 ## 🚀 Investment Opportunity Summary
 
-Arlo, Finthos represents a rare opportunity to acquire a production-ready enterprise fintech platform at an optimal market entry point. The combination of:
+Arlo, PeopleTrustPay represents a rare opportunity to acquire a production-ready enterprise fintech platform at an optimal market entry point. The combination of:
 
 - **Complete regulatory compliance**
 - **Advanced blockchain technology**
@@ -114,7 +114,7 @@ I believe this opportunity aligns well with sophisticated investors seeking tech
 Best regards,
 
 **Demond J. Balentine**  
-Founder & CEO, Finthos Inc.  
+Founder & CEO, PeopleTrustPay Inc.  
 demond.balentine@atlasstudents.com  
 +1 (555) 123-4567
 
@@ -127,8 +127,8 @@ demond.balentine@atlasstudents.com
 - Maximum liability limited to $1,000 as outlined in attached disclaimer
 
 **CONFIDENTIALITY NOTICE:**
-This email and attachments contain confidential information of Finthos Inc. Unauthorized disclosure is prohibited. Use is restricted to evaluation purposes only under terms of attached legal disclaimer.
+This email and attachments contain confidential information of PeopleTrustPay Inc. Unauthorized disclosure is prohibited. Use is restricted to evaluation purposes only under terms of attached legal disclaimer.
 
 ---
 
-**© 2025 Finthos Inc. - Confidential Business Communication**
+**© 2025 PeopleTrustPay Inc. - Confidential Business Communication**

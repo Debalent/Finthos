@@ -1,8 +1,8 @@
-# 🚀 Finthos Demo - Quick Start Guide
+# 🚀 PeopleTrustPay Demo - Quick Start Guide
 
 ## Welcome, Potential Investor/Buyer
 
-You've just accessed the **Finthos Enterprise Fintech Platform** - a complete, production-ready solution for modern financial services.
+You've just accessed the **PeopleTrustPay Enterprise Fintech Platform** - a complete, production-ready solution for modern financial services.
 
 ## 🎯 What You're Seeing
 
@@ -131,8 +131,8 @@ This is a **live demonstration** of our enterprise-grade fintech platform that i
 
 - **Email**: <demond.balentine@atlasstudents.com>
 - **Phone**: +1 (555) 123-4567
-- **LinkedIn**: /company/Finthos-fintech
-- **Website**: <www.Finthos.com>
+- **LinkedIn**: /company/PeopleTrustPay-fintech
+- **Website**: <www.PeopleTrustPay.com>
 
 ### Investment Inquiry
 
@@ -147,5 +147,5 @@ Ready to discuss acquisition or investment? Contact our team for:
 
 **Confidential & Proprietary** - This demonstration is provided under NDA for evaluation purposes only.
 
-© 2025 Finthos Inc. All rights reserved.
+© 2025 PeopleTrustPay Inc. All rights reserved.
 

@@ -1,9 +1,9 @@
 # ⚖️ LEGAL DISCLAIMER AND CONFIDENTIALITY AGREEMENT
 
-## Finthos ENTERPRISE PLATFORM DEMONSTRATION
+## PeopleTrustPay ENTERPRISE PLATFORM DEMONSTRATION
 
 **Effective Date**: October 17, 2025  
-**Disclosing Party**: Demond J. Balentine / Finthos Inc.  
+**Disclosing Party**: Demond J. Balentine / PeopleTrustPay Inc.  
 **Receiving Party**: [Buyer Entity Name]  
 
 ---
@@ -39,7 +39,7 @@ Shall be considered "Confidential Information" and is disclosed solely for evalu
 
 ### 1. "AS IS" BASIS DISCLAIMER
 
-**THE Finthos PLATFORM AND ALL RELATED MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:**
+**THE PeopleTrustPay PLATFORM AND ALL RELATED MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:**
 
 - **Merchantability**: No guarantee of commercial viability
 - **Fitness for Purpose**: No warranty for specific use cases
@@ -49,7 +49,7 @@ Shall be considered "Confidential Information" and is disclosed solely for evalu
 
 ### 2. LIMITATION OF LIABILITY
 
-**IN NO EVENT SHALL DEMOND J. BALENTINE, Finthos INC., OR ANY AFFILIATES BE LIABLE FOR:**
+**IN NO EVENT SHALL DEMOND J. BALENTINE, PeopleTrustPay INC., OR ANY AFFILIATES BE LIABLE FOR:**
 
 #### A. Direct Damages
 - Financial losses from business decisions based on disclosed information
@@ -219,7 +219,7 @@ Shall be considered "Confidential Information" and is disclosed solely for evalu
 
 ### FOR RECEIVING PARTY (BUYER):
 
-By accessing the Finthos demonstration materials, downloading files, or participating in platform demonstrations, Receiving Party acknowledges:
+By accessing the PeopleTrustPay demonstration materials, downloading files, or participating in platform demonstrations, Receiving Party acknowledges:
 
 1. **Understanding**: Full comprehension of all terms and conditions
 2. **Agreement**: Binding acceptance of all provisions herein
@@ -230,9 +230,9 @@ By accessing the Finthos demonstration materials, downloading files, or particip
 
 ### FOR DISCLOSING PARTY:
 
-**Demond J. Balentine**, as Founder and CEO of Finthos Inc., represents:
+**Demond J. Balentine**, as Founder and CEO of PeopleTrustPay Inc., represents:
 
-1. **Authority**: Legal authority to disclose and negotiate regarding Finthos platform
+1. **Authority**: Legal authority to disclose and negotiate regarding PeopleTrustPay platform
 2. **Ownership**: Legitimate ownership or control of disclosed intellectual property
 3. **Accuracy**: Good faith effort to provide accurate information
 4. **Compliance**: Agreement to negotiate in good faith if terms are acceptable
@@ -302,7 +302,7 @@ Before making any business or investment decisions based on disclosed informatio
 **Document Information:**
 - **Version**: 1.0 (Initial Release)
 - **Date**: October 17, 2025
-- **Author**: Demond J. Balentine / Finthos Inc.
+- **Author**: Demond J. Balentine / PeopleTrustPay Inc.
 - **Review**: Legal compliance review recommended
 - **Updates**: May be modified with written notice
 
@@ -312,7 +312,7 @@ Before making any business or investment decisions based on disclosed informatio
 
 ## ✅ FINAL ACKNOWLEDGMENT
 
-**BY PROCEEDING WITH EVALUATION OF Finthos PLATFORM, RECEIVING PARTY CONFIRMS:**
+**BY PROCEEDING WITH EVALUATION OF PeopleTrustPay PLATFORM, RECEIVING PARTY CONFIRMS:**
 
 ☑️ **Read and Understood**: Complete review of all terms and conditions  
 ☑️ **Legal Authority**: Authorized to accept on behalf of organization  
@@ -324,7 +324,7 @@ Before making any business or investment decisions based on disclosed informatio
 
 ---
 
-**© 2025 Finthos Inc. - All Rights Reserved**  
+**© 2025 PeopleTrustPay Inc. - All Rights Reserved**  
 **This document contains confidential and proprietary information protected by law.**
 
 ---

@@ -1,5 +1,5 @@
 {
-  "name": "finthos-monorepo",
+  "name": "peopletrustpay-monorepo",
   "version": "1.0.0",
   "description": "Enterprise fintech platform for secure peer-to-peer payments with blockchain integration",
   "private": true,
@@ -17,19 +17,19 @@
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "type-check": "turbo run type-check",
-    "start:web": "turbo run dev --filter=@finthos/web",
-    "start:mobile": "turbo run dev --filter=@finthos/mobile",
-    "start:admin": "turbo run dev --filter=@finthos/admin-dashboard",
-    "start:auth": "turbo run dev --filter=@finthos/auth-service",
-    "start:payments": "turbo run dev --filter=@finthos/payments-service",
-    "start:api": "turbo run dev --filter=@finthos/api-gateway",
+    "start:web": "turbo run dev --filter=@peopletrustpay/web",
+    "start:mobile": "turbo run dev --filter=@peopletrustpay/mobile",
+    "start:admin": "turbo run dev --filter=@peopletrustpay/admin-dashboard",
+    "start:auth": "turbo run dev --filter=@peopletrustpay/auth-service",
+    "start:payments": "turbo run dev --filter=@peopletrustpay/payments-service",
+    "start:api": "turbo run dev --filter=@peopletrustpay/api-gateway",
     "deploy:prod": "turbo run build && turbo run deploy",
     "docker:build": "docker-compose build",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
-    "migration:run": "turbo run migration:run --filter=@finthos/server",
-    "migration:generate": "turbo run migration:generate --filter=@finthos/server",
-    "seed:data": "turbo run seed --filter=@finthos/server"
+    "migration:run": "turbo run migration:run --filter=@peopletrustpay/server",
+    "migration:generate": "turbo run migration:generate --filter=@peopletrustpay/server",
+    "seed:data": "turbo run seed --filter=@peopletrustpay/server"
   },
   "devDependencies": {
     "@turbo/gen": "^1.10.12",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/finthos-monorepo.git"
+    "url": "https://github.com/your-org/peopletrustpay-monorepo.git"
   },
   "keywords": [
     "fintech",
@@ -68,7 +68,7 @@
     "monorepo",
     "enterprise"
   ],
-  "author": "Finthos Team",
+  "author": "PeopleTrustPay Team",
   "license": "PROPRIETARY",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

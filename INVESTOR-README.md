@@ -1,8 +1,8 @@
-# Finthos Enterprise Platform - Investment Opportunity
+# PeopleTrustPay Enterprise Platform - Investment Opportunity
 
 ## Executive Summary
 
-**Finthos** is a complete, production-ready enterprise fintech platform designed for immediate deployment and revenue generation. This turnkey solution represents a rare opportunity to acquire a fully-developed payment processing ecosystem without the typical 2-3 year development cycle.
+**PeopleTrustPay** is a complete, production-ready enterprise fintech platform designed for immediate deployment and revenue generation. This turnkey solution represents a rare opportunity to acquire a fully-developed payment processing ecosystem without the typical 2-3 year development cycle.
 
 ---
 
